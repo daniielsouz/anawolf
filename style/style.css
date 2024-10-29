@@ -119,8 +119,9 @@ picture img {
       top: 75%;
     }
 
-    .link2,.link3 {
-        font-size: 10px;
+    .link-customizacao{
+        font-size: 15px;
+        text-align: center;
     }
 
     .imagem-com-link .link2{
@@ -128,7 +129,7 @@ picture img {
     }
 
     .text-suporte{
-        font-size: 15px;
+        font-size: 10px;
     }
 
     #icon-WhatsApp {
