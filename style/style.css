@@ -1,0 +1,141 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+:root {
+    --font: "Poppins", sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+picture {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 5px;
+}
+
+picture:first-of-type {
+    padding-top: 0;
+}
+
+picture:last-of-type {
+    padding-bottom: 0;
+}
+
+picture img {
+    width: 100%;
+    height: 100%;
+}
+
+.imagem-com-link {
+    position: relative;
+}
+
+.imagem-com-link .link1,.imagem-com-link .link2, .imagem-com-link .link3 ,.imagem-com-link .link4{
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.imagem-com-link .link1{
+    top: 20%;
+    left: 50%;
+}
+.imagem-com-link .link2{
+    bottom: 5%;
+    left: 50%;
+
+}
+
+.imagem-com-link .link3{
+    bottom: 10%;
+    left: 50%;
+} 
+.imagem-com-link .link4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 60%;
+    left: 50%;
+}
+
+
+.link-customizacao {
+    text-decoration: none;
+    font-size: 3em;
+    color: #fff;
+    padding: 5px 30px;
+    border: solid 1px #fff;
+    font-family: var(--font);
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.backred{
+    background-color:#521515 ;
+}
+
+.link-customizacao:hover, #icon-WhatsApp:hover {
+    transform: scale(1.1);
+}
+
+.text-suporte{
+    color: #521515;
+    font-family: var(--font);
+    font-size: 2em;
+    font-weight: 200 ;
+}
+
+.text-suporte:first-child{
+    font-style: italic;
+}
+.text-suporte:not(:first-child){
+    text-transform: uppercase;
+    font-weight: 700;
+}
+#icon-WhatsApp {
+    width: 100px;
+    transition: transform 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    picture{
+        height: 100%;
+    }
+
+    .imagem-com-link .link1{
+      top: 75%;
+    }
+
+    .link2,.link3 {
+        font-size: 10px;
+    }
+
+    .imagem-com-link .link2{
+        bottom: 10%;
+    }
+
+    .text-suporte{
+        font-size: 15px;
+    }
+
+    #icon-WhatsApp {
+        width: 50px;
+        
+    }
+
+    
+}
+
