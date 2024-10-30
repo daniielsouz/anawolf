@@ -159,6 +159,7 @@ picture img {
 @media screen and (max-width: 768px) {
     picture{
         height: 100%;
+        padding-top:0.1px ;
     }
 
     .imagem-com-link .link1{
