@@ -8,8 +8,11 @@
     <link rel="shortcut icon" href="img/iconNav.jpeg" type="image/x-icon">
 </head>
 <body>
+    <div id="loader">
+        <div class="loader-circle outer-circle"></div>
+        <div class="loader-circle inner-circle"></div>
+    </div>
     <main>
-        
         <picture>
             <source srcset="img/mobile/1.png" media="(max-width: 768px)">
             <img src="img/desktop/1.png" alt="foto 01">
@@ -80,5 +83,14 @@
             </div>
         </picture>
     </main>
+    <script>
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loader');
+            setTimeout(() => {
+                loader.style.display = 'none'; 
+                document.body.style.opacity = 1; 
+            }, 3000);
+        });
+    </script>
 </body>
 </html>

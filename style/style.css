@@ -6,11 +6,56 @@
 }
 
 body, html {
-    margin: 0;
-    padding: 0;
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+}
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.loader-circle {
+    border: 8px  solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer-circle {
+    border-top: 8px solid #521515;
+    width: 100px;
+    height: 100px;
+    animation: spin-left 1s linear infinite;
+}
+
+.inner-circle {
+    border-top: 8px solid  #521515;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    animation: spin-right 1s linear infinite;
+}
+
+@keyframes spin-left {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-360deg); }
+}
+
+@keyframes spin-right {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 main {
