@@ -66,7 +66,7 @@ main {
 picture {
     width: 100vw;
     height: 100vh;
-    padding-top: 5px;
+    padding-top: 2px;
 }
 
 picture:first-of-type {
