@@ -133,7 +133,7 @@ picture img {
     background-color:#521515 ;
 }
 
-.link-customizacao:hover, #icon-WhatsApp:hover {
+.link-customizacao:hover, #icon-WhatsApp:hover, #icon-instagram:hover {
     transform: scale(1.1);
 }
 
@@ -151,12 +151,14 @@ picture img {
     text-transform: uppercase;
     font-weight: 700;
 }
-#icon-WhatsApp {
+#icon-WhatsApp, #icon-instagram {
     width: 100px;
     transition: transform 0.3s ease;
 }
 
-
+#icon-instagram {
+    padding: 10px;
+}
 @media screen and (max-width: 768px) {
     picture{
         height: 100%;
@@ -180,7 +182,7 @@ picture img {
         font-size: 10px;
     }
 
-    #icon-WhatsApp {
+    #icon-WhatsApp, #icon-instagram {
         width: 50px;
         
     }
